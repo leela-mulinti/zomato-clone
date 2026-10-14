@@ -1,0 +1,128 @@
+.restaurants-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.restaurants-title-desc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.restaurants-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #183b56;
+  letter-spacing: -0.5px;
+}
+
+.restaurants-subheading {
+  font-size: 15px;
+  font-weight: 400;
+  color: #64748b;
+  max-width: 480px;
+}
+
+.restaurants-controls-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.search-box-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 12px;
+  height: 40px;
+  transition: border-color 0.2s ease;
+}
+
+.search-box-wrapper:focus-within {
+  border-color: #f7931e;
+  box-shadow: 0 0 0 3px rgba(247, 147, 30, 0.1);
+}
+
+.search-box-icon {
+  color: #94a3b8;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.restaurants-search-input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #334155;
+  width: 180px;
+}
+
+.sort-by-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 0 12px;
+  height: 40px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.sort-by-icon {
+  font-size: 20px;
+  color: #475569;
+}
+
+.sort-by-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.sort-by-select {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+  cursor: pointer;
+  padding-right: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .restaurants-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .restaurants-heading {
+    font-size: 22px;
+  }
+
+  .restaurants-subheading {
+    font-size: 13px;
+  }
+
+  .restaurants-controls-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .search-box-wrapper {
+    flex: 1;
+  }
+
+  .restaurants-search-input {
+    width: 100%;
+  }
+}

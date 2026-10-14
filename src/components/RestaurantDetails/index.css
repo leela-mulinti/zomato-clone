@@ -1,0 +1,70 @@
+.restaurant-details-route {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.restaurant-details-main {
+  flex: 1;
+}
+
+.details-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.food-items-section {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 24px;
+}
+
+.food-menu-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #183b56;
+  margin-bottom: 24px;
+}
+
+.food-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.restaurant-error-view {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.error-title {
+  font-size: 22px;
+  color: #ef4444;
+  margin-bottom: 8px;
+}
+
+.error-desc {
+  font-size: 14px;
+  color: #64748b;
+}
+
+@media screen and (max-width: 768px) {
+  .food-items-section {
+    padding: 0 16px;
+    margin: 24px auto 40px auto;
+  }
+
+  .food-menu-heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .food-items-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

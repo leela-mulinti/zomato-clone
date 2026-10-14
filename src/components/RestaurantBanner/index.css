@@ -1,0 +1,115 @@
+.restaurant-banner-section {
+  background-color: #334155;
+  color: #ffffff;
+  padding: 40px 24px;
+  width: 100%;
+}
+
+.restaurant-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.restaurant-banner-img {
+  width: 280px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.restaurant-banner-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.restaurant-banner-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.restaurant-banner-cuisine {
+  font-size: 15px;
+  font-weight: 400;
+  color: #cbd5e1;
+}
+
+.restaurant-banner-location {
+  font-size: 14px;
+  font-weight: 400;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.restaurant-banner-metrics-container {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.metric-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric-value-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metric-star-icon {
+  color: #22c55e;
+  font-size: 14px;
+}
+
+.metric-rupee-icon {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.metric-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.metric-label {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 36px;
+  background-color: #64748b;
+}
+
+@media screen and (max-width: 768px) {
+  .restaurant-banner-section {
+    padding: 24px 16px;
+  }
+
+  .restaurant-banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .restaurant-banner-img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .restaurant-banner-name {
+    font-size: 24px;
+  }
+}

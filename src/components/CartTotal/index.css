@@ -1,0 +1,80 @@
+.cart-total-section {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.cart-divider-line {
+  border: none;
+  border-top: 1px dashed #cbd5e1;
+  margin-bottom: 24px;
+}
+
+.cart-total-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cart-order-total-label {
+  font-size: 20px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.cart-price-action-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cart-total-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.total-rupee-icon {
+  font-size: 20px;
+  color: #334155;
+}
+
+.total-amount-val {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.place-order-btn {
+  background-color: #f7931e;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #e07e12;
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 600px) {
+  .cart-total-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-price-action-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .place-order-btn {
+    padding: 10px 20px;
+  }
+}
